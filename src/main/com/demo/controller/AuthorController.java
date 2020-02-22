@@ -1,7 +1,7 @@
 package demo.controller;
 
 import com.alibaba.fastjson.JSON;
-import demo.entity.Author;
+import demo.entity.AuthorEntity;
 import demo.service.AuthorService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,9 +24,9 @@ public class AuthorController {
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
         String _id = req.getParameter("_id");
-        Author author = this.authorService.findAuthorById(_id);
+        AuthorEntity authorEntity = this.authorService.findAuthorById(_id);
         //将javabean转化成json字符串
-        String jsonStr = JSON.toJSONString(author);
+        String jsonStr = JSON.toJSONString(authorEntity);
         //将json字符串转化成对应的javabean
         //Bean bean = JSON.parseObject(jsonStr, Bean.class);
         PrintWriter pw = resp.getWriter();

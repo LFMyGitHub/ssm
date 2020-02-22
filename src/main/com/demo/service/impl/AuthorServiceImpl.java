@@ -1,7 +1,7 @@
 package demo.service.impl;
 
 import demo.dao.AuthorDao;
-import demo.entity.Author;
+import demo.entity.AuthorEntity;
 import demo.service.AuthorService;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ public class AuthorServiceImpl implements AuthorService {
     private AuthorDao authorDao;
 
     @Override
-    public Author findAuthorById(String _id) {
+    public AuthorEntity findAuthorById(String _id) {
         return authorDao.findAuthorById(_id);
     }
 }

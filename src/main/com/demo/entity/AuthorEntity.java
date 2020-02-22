@@ -1,6 +1,6 @@
 package demo.entity;
 
-public class Author {
+public class AuthorEntity {
     private String _id;
     private String name;
     private String headImageUrl;

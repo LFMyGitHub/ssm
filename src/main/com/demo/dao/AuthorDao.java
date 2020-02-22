@@ -1,8 +1,8 @@
 package demo.dao;
 
-import demo.entity.Author;
+import demo.entity.AuthorEntity;
 
 public interface AuthorDao {
     //根据_id寻找对应的Author
-    Author findAuthorById(String _id);
+    AuthorEntity findAuthorById(String _id);
 }

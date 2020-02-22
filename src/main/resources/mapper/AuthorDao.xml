@@ -4,7 +4,7 @@
 <!-- 设置为IUserDao接口方法提供sql语句配置 -->
 <mapper namespace="demo.dao.AuthorDao">
 
-    <select id="findAuthorById" resultType="demo.entity.Author" parameterType="String">
+    <select id="findAuthorById" resultType="demo.entity.AuthorEntity" parameterType="String">
         SELECT * FROM author WHERE _id = #{id}
     </select>
 
