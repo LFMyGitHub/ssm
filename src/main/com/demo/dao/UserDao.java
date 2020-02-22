@@ -7,6 +7,8 @@ import demo.entity.UserEntity;
  */
 public interface UserDao {
     //登录
+    UserEntity userLogin(UserEntity userEntity);
+
     //注册
     int registered(UserEntity userEntity);
     //忘记密码

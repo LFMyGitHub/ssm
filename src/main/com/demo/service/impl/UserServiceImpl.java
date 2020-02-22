@@ -13,6 +13,11 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
+    public UserEntity userLogin(UserEntity userEntity) {
+        return userDao.userLogin(userEntity);
+    }
+
+    @Override
     public int registered(UserEntity userEntity) {
         return  userDao.registered(userEntity);
     }
